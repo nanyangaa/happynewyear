@@ -1,0 +1,334 @@
+@font-face {
+	font-family: 'f';
+	src: url('../font/f.ttf');
+}
+html, body {
+	overflow: hidden;
+	max-width: 1080px;
+	margin: 0 auto;
+	height: 100%;
+	background-color: #f5f2eb;
+	background: url(../images/bg_bot.png) center bottom no-repeat,
+				url(../images/bg_top.png) center top no-repeat;
+	background-size: 100%;
+}
+.index {
+	position: relative;
+	height: 100%;
+	font-weight: bold;
+}
+.con-box {
+	display: none;
+	height: 100%;
+}
+.con-box>div {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 24rem;
+	margin: auto;
+}
+.index .show {
+	display: block;
+}
+.index .con-box img {
+	display: block;
+	margin: 0 auto;
+}
+.index .home-page>div {
+	padding-top: 13.95rem;
+}
+.index .home-page .con>img {
+	height: 11.9rem;
+}
+
+/*公共样式con-box  滑动提示条高*/
+.slide-bar {
+	width: 100%;
+	height: 5.2rem;
+}
+.slide-bar img {
+	display: block;
+	height: 1.69rem;
+	margin: 0 auto;
+}
+.slide-bar img:nth-child(1) {
+	-webkit-animation: slide 1.2s ease-in-out infinite;
+	animation: slide 1.2s ease-in-out infinite;
+}
+.slide-bar img:nth-child(2) {
+	opacity: 0;
+	-webkit-animation: slide1 1.2s ease-in-out infinite;
+	animation: slide1 1.2s ease-in-out infinite;
+}
+.slide-bar img:nth-child(3) {
+	opacity: 0;
+	-webkit-animation: slide2 1.2s ease-in-out infinite;
+	animation: slide2 1.2s ease-in-out infinite;
+}
+@-webkit-keyframes slide {
+	33% {opacity: 1;}
+	66% {opacity: 0;}
+	99% {opacity: 0;}
+}
+@-webkit-keyframes slide1 {
+	33% {opacity: 0;}
+	66% {opacity: 1;}
+	99% {opacity: 0;}
+}
+@-webkit-keyframes slide2 {
+	33% {opacity: 0;}
+	66% {opacity: 0;}
+	99% {opacity: 1;}
+}
+/*年俗题目的结果界面、饮食健康的结果界面*/
+.index .result-page h1 {
+	line-height: 3.19rem;
+	text-align: center;
+	color: #cf1c1d;
+	font-size: 1.71rem;
+	font-weight: bold;
+	letter-spacing: 2.31%;
+}
+.index .result-page .score {
+	line-height: 3.98rem;
+	text-align: center;
+	color: #cf1c1d;
+	font-size: 4.76rem;
+	font-family: 'f';
+}
+.index .result-page img {
+	height: 1.43rem;
+	margin: 0 auto;
+}
+.index .result-page .comment {
+	padding: 2rem 14.35%;
+	line-height: 1.67rem;
+	color: #000;
+	font-size: 1.14rem;
+}
+.index .result-page a {
+	display: block;
+	width: 39.81%;
+	height: 2.62rem;
+	margin: 0 auto;
+	line-height: 2.62rem;
+	text-align: center;
+	color: #000;
+	-webkit-box-shadow: 0 0 0 1px #6f6464;
+	box-shadow: 0 0 0 1px #6f6464;
+	-webkit-border-radius: 0.24rem;
+	border-radius: 0.24rem;
+}
+
+/*答题页面点击后隔一秒显示*/
+.index .tip-page dl, .ans-page dl {
+	display: table;
+	width: 100%;
+	height: 7.76rem;
+}
+.index .tip-page dt, .ans-page dt {
+	position: relative;
+	display: table-cell;
+	width: 65.28%;
+	height: 100%;
+}
+.index .tip-page dt img, .index .ans-page dt img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 7.14rem;
+	margin: auto 1.85% auto auto;
+	-webkit-box-shadow: 0 0 0 0.35rem #d24246;
+	box-shadow: 0 0 0 0.35rem #d24246;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+.index .tip-page dd, .ans-page dd {
+	display: table-cell;
+	height: 7.76rem;
+	padding-left: 3.5%;
+	color: #000;
+	font-size: 2rem;
+	font-family: 'f';
+	font-weight: bolder;
+	vertical-align: middle;
+	letter-spacing: 3rem;
+}
+.index .tip-page .slide-bar img {
+	height: 1.69rem;
+}
+.index .tip-page .con {
+	width: 64.89%;
+	padding: 0.71rem 5%;
+	margin: 2.05rem auto 0.5rem;
+	color: #000;
+	font-size: 1.14rem;
+	text-align: justify;
+	-webkit-box-shadow: 0 0 0 0.1rem #e60012;
+	box-shadow: 0 0 0 0.1rem #e60012;
+	-webkit-border-radius: 0.24rem;
+	border-radius: 0.24rem;
+}
+.index .tip-page .con em {
+	display: block;
+	color: #f00;
+}
+.ans-page dl {
+	margin-bottom: 1.62rem;
+}
+.ans-page>div div {
+	position: relative;
+	width: 62.22%;
+	height: 3.19rem;
+	margin: 0 auto 0.71rem;
+	line-height: 3.19rem;
+	text-align: center;
+	color: #000;
+	font-size: 1.29rem;
+	font-weight: bold;
+	-webkit-box-shadow: 0 0 0 0.1rem #e60012;
+	box-shadow: 0 0 0 0.1rem #e60012;
+	-webkit-border-radius: 0.24rem;
+	border-radius: 0.24rem;
+}
+
+.index .ans-page .right, .index .ans-page .wrong {
+	position: absolute;
+	display: none;
+	width: 18.21%;
+	top: 0.43rem;
+	left: -10%;
+}
+.index .ans-page .right-ans {
+	display: block;
+}
+.index .ans-page .wrong-ans {
+	display: block;
+}
+/*列表页*/
+.index .list h1 {
+	margin-bottom: 0.43rem;
+	line-height: 3.19rem;
+	text-align: center;
+	color: #000;
+	font-size: 1.71rem;
+	font-weight: bold;
+}
+.list .content div:nth-child(1) {
+	border-bottom: 0.14rem dotted #fe0000;
+}
+.list dl {
+	width: 75.46%;
+	margin: 0 auto;
+	padding: 0 11.04% 1.31rem;
+}
+.list dl dt, .list dl dd {
+	float: left;
+}
+.list dl dt {
+	width: 30.06%;
+	height: 5.71rem;
+	margin: 0 4.91% 0 0;
+	border: 0.07rem solid #e60012;
+	-webkit-border-radius: 0.14rem;
+	border-radius: 0.14rem;
+}
+.list dl dt img {
+	width: 100%;
+	height: 5.71rem;
+}
+.list dl dd {
+	width: 62.03%;
+	line-height: 1.526rem;
+	color: #000;
+	font-size: 1rem;
+	font-weight: 700;
+	text-align: justify;
+}
+/*列表页滑动*/
+.index .list {
+	overflow: hidden;
+}
+.content {
+	height: 25.14rem;
+}
+.con-box strong {
+	display: block;
+	height: 4.76rem;
+}
+.newMask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	z-index: 999;
+}
+.newMask p {
+	position: absolute;
+	width: 100%;
+	height: 3rem;
+	margin: auto;
+	text-align: center;
+	font-size: 1.5rem;
+}
+/*加载进度条*/
+.index {
+	display: none;
+}
+.load {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.load img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+}
+.loading {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
+.progress {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 70%;
+	height: 2rem;
+	margin: auto;
+	border: 1px solid #8AF1FF;
+	z-index: 99;
+}
+.progressbar {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 100%;
+	background:  -webkit-linear-gradient(left, #67B8FF, #E4EE22);
+	-webkit-transition: width ease-in 200ms;
+	transition: width ease-in 500ms;
+}
+.progresstext {
+	position: absolute;
+	top: 0.45rem;
+	right: -3rem;
+}
